@@ -2,6 +2,7 @@ import { View, Text, TextInput } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { styles } from "./myInput.style";
 import { useState } from "react";
+
 export default function MyInput({ placeholder, icon }) {
   const [isFocused, setIsFocused] = useState(false);
 
