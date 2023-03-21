@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import { Text, View, StatusBar, Image, TouchableOpacity } from "react-native";
-import * as Font from "expo-font";
-import MyInput from "./src/components/MyInput";
 import LoadingFonts from "./src/components/LoadingFonts";
-import { styles } from "./src/styles/app.style";
+import * as Font from "expo-font";
+import { useEffect, useState } from "react";
+import Login from "./src/pages/Login";
+import Register from "./src/pages/Register";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,31 +22,19 @@ export default function App() {
     }
     loadFonts();
   }, []);
-
   //Caso as fontes nao tenham sido carregadas renderiza uma tela de loading
   !isLoaded && <LoadingFonts />;
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="black" />
-      <Image
-        source={{
-          uri: "https://cdn-icons-png.flaticon.com/512/6681/6681204.png",
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
         }}
-        style={styles.loginImage}
-      />
-      <Text style={styles.heading}>Login</Text>
-      <Text style={styles.loginDescription}>Please login to continue</Text>
-      <MyInput icon="email" placeholder="Enter your Email" />
-      <MyInput icon="lock" placeholder="Enter your password" />
-      <Text style={styles.forgotPassword}>Forgot password?</Text>
-      <TouchableOpacity style={styles.loginButton}>
-        <Text style={styles.loginButtonText}>Login</Text>
-      </TouchableOpacity>
-      <Text style={styles.createAccount}>
-        Dont have an account?{" "}
-        <Text style={styles.createAccountSignUp}>Sign up</Text>
-      </Text>
-    </View>
+      >
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Register" component={Register} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

@@ -59,9 +59,12 @@ export const styles = StyleSheet.create({
     fontSize: 16,
   },
   createAccount: {
+    flexDirection:'row'
+  },createAccountText: {
     color: "#515d71",
     fontSize: 14,
     fontFamily: "Poppins-Medium",
+    flexDirection:'row'
   },
   createAccountSignUp: {
     color: "#3b79f5",
