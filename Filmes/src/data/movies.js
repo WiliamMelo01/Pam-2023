@@ -17,8 +17,8 @@ const DATA =
 
 {
     ID: '03',
-    NOME: 'Avatar 2',
-    nota: '6.5',
+    NOME: 'Your name',
+    nota: '9',
     imagem: '3.jpg'
 },
 
@@ -72,3 +72,5 @@ const DATA =
 },
 
 ]
+
+export default DATA;
