@@ -1,0 +1,16 @@
+{
+  "ast": null,
+  "code": "export var movies = [new Media(\"Your name\", 8.8, \"01\", \"filme1.jpg\", \"movie\"), new Media(\"Weathering with you\", 9.7, \"02\", \"filme2.jpg\", \"movie\"), new Media(\"Suzume no tojimari\", 9, \"03\", \"filme3.jpg\", \"movie\"), new Media(\"Triângulo do Tristeza\", 7.4, \"04\", \"filme4.jpg\", \"movie\"), new Media(\"Close\", 9.6, \"05\", \"filme5.jpg\", \"movie\"), new Media(\"Ruído Branco\", 9.9, \"06\", \"filme6.jpg\", \"movie\"), new Media(\"Marte Um\", 8.2, \"07\", \"filme7.jpg\", \"movie\"), new Media(\"A Mulher Rei\", 9.2, \"08\", \"filme8.jpg\", \"movie\"), new Media(\"A filha perdida\", 7.7, \"09\", \"filme9.jpg\", \"movie\"), new Media(\"Ataque dos cães\", 7.3, \"10\", \"filme10.jpg\", \"movie\")];",
+  "map": {
+    "version": 3,
+    "names": ["movies", "Media"],
+    "sources": ["D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/data/movies.js"],
+    "sourcesContent": [
+      "export const movies: Media[] = [\n  new Media(\"Your name\", 8.8, \"01\", \"filme1.jpg\", \"movie\"),\n  new Media(\"Weathering with you\", 9.7, \"02\", \"filme2.jpg\", \"movie\"),\n  new Media(\"Suzume no tojimari\", 9, \"03\", \"filme3.jpg\", \"movie\"),\n  new Media(\"Triângulo do Tristeza\", 7.4, \"04\", \"filme4.jpg\", \"movie\"),\n  new Media(\"Close\", 9.6, \"05\", \"filme5.jpg\", \"movie\"),\n  new Media(\"Ruído Branco\", 9.9, \"06\", \"filme6.jpg\", \"movie\"),\n  new Media(\"Marte Um\", 8.2, \"07\", \"filme7.jpg\", \"movie\"),\n  new Media(\"A Mulher Rei\", 9.2, \"08\", \"filme8.jpg\", \"movie\"),\n  new Media(\"A filha perdida\", 7.7, \"09\", \"filme9.jpg\", \"movie\"),\n  new Media(\"Ataque dos cães\", 7.3, \"10\", \"filme10.jpg\", \"movie\"),\n];"
+    ],
+    "mappings": "AAAA,OAAO,IAAMA,MAAe,GAAG,CAC7B,IAAIC,KAAK,CAAC,WAAW,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EACxD,IAAIA,KAAK,CAAC,qBAAqB,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EAClE,IAAIA,KAAK,CAAC,oBAAoB,EAAE,CAAC,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EAC/D,IAAIA,KAAK,CAAC,uBAAuB,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EACpE,IAAIA,KAAK,CAAC,OAAO,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EACpD,IAAIA,KAAK,CAAC,cAAc,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EAC3D,IAAIA,KAAK,CAAC,UAAU,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EACvD,IAAIA,KAAK,CAAC,cAAc,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EAC3D,IAAIA,KAAK,CAAC,iBAAiB,EAAE,GAAG,EAAE,IAAI,EAAE,YAAY,EAAE,OAAO,CAAC,EAC9D,IAAIA,KAAK,CAAC,iBAAiB,EAAE,GAAG,EAAE,IAAI,EAAE,aAAa,EAAE,OAAO,CAAC,CAChE"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

@@ -1,0 +1,41 @@
+{
+  "ast": null,
+  "code": "import React1 from \"react\";\nimport Image from \"react-native-web/dist/exports/Image\";\nimport Text from \"react-native-web/dist/exports/Text\";\nimport TouchableOpacity from \"react-native-web/dist/exports/TouchableOpacity\";\nimport styles from \"./style\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\nexport default function CardItem(_ref) {\n  var nome = _ref.nome,\n    nota = _ref.nota,\n    imagem = _ref.imagem;\n  return _jsxs(TouchableOpacity, {\n    style: styles.containerFilmes,\n    children: [_jsx(Image, {\n      source: require(\"../../../assets/films/\" + imagem),\n      style: styles.imagemFilmes\n    }), _jsx(Text, {\n      style: styles.tituloFilmes,\n      children: nome\n    }), _jsxs(Text, {\n      style: styles.notaFilme,\n      children: [\" \", nota]\n    })]\n  });\n}",
+  "map": {
+    "version": 3,
+    "names": [
+      "React1",
+      "Image",
+      "Text",
+      "TouchableOpacity",
+      "styles",
+      "jsx",
+      "_jsx",
+      "jsxs",
+      "_jsxs",
+      "CardItem",
+      "_ref",
+      "nome",
+      "nota",
+      "imagem",
+      "style",
+      "containerFilmes",
+      "children",
+      "source",
+      "require",
+      "imagemFilmes",
+      "tituloFilmes",
+      "notaFilme"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/cardItem/index.js"
+    ],
+    "sourcesContent": [
+      "import React1 from \"react\";\nimport {Image, Text, TouchableOpacity} from 'react-native'\nimport styles from \"./style\";\n\n\nexport default function CardItem({nome,nota,imagem}){\n    return(\n    <TouchableOpacity style={styles.containerFilmes}>\n        <Image source = {require (`../../../assets/films/${imagem}`)} style={styles.imagemFilmes}/>\n        <Text style={styles.tituloFilmes}>{nome}</Text>\n        <Text  style={styles.notaFilme}> {nota}</Text>\n    </TouchableOpacity>\n\n\n    );\n\n\n}"
+    ],
+    "mappings": "AAAA,OAAOA,MAAM,MAAM,OAAO;AAAC,OAAAC,KAAA;AAAA,OAAAC,IAAA;AAAA,OAAAC,gBAAA;AAE3B,OAAOC,MAAM;AAAgB,SAAAC,GAAA,IAAAC,IAAA;AAAA,SAAAC,IAAA,IAAAC,KAAA;AAG7B,eAAe,SAASC,QAAQA,CAAAC,IAAA,EAAoB;EAAA,IAAlBC,IAAI,GAAAD,IAAA,CAAJC,IAAI;IAACC,IAAI,GAAAF,IAAA,CAAJE,IAAI;IAACC,MAAM,GAAAH,IAAA,CAANG,MAAM;EAC9C,OACAL,KAAA,CAACL,gBAAgB;IAACW,KAAK,EAAEV,MAAM,CAACW,eAAgB;IAAAC,QAAA,GAC5CV,IAAA,CAACL,KAAK;MAACgB,MAAM,EAAIC,OAAO,4BAA2BL,MAAQ,CAAE;MAACC,KAAK,EAAEV,MAAM,CAACe;IAAa,CAAC,CAAC,EAC3Fb,IAAA,CAACJ,IAAI;MAACY,KAAK,EAAEV,MAAM,CAACgB,YAAa;MAAAJ,QAAA,EAAEL;IAAI,CAAO,CAAC,EAC/CH,KAAA,CAACN,IAAI;MAAEY,KAAK,EAAEV,MAAM,CAACiB,SAAU;MAAAL,QAAA,GAAC,GAAC,EAACJ,IAAI;IAAA,CAAO,CAAC;EAAA,CAChC,CAAC;AAMvB"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

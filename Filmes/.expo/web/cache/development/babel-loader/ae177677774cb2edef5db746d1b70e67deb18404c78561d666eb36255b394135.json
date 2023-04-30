@@ -1,0 +1,42 @@
+{
+  "ast": null,
+  "code": "import Image from \"react-native-web/dist/exports/Image\";\nimport Text from \"react-native-web/dist/exports/Text\";\nimport TouchableOpacity from \"react-native-web/dist/exports/TouchableOpacity\";\nimport styles from \"./style\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\nexport default function CardItem(_ref) {\n  var nome = _ref.nome,\n    nota = _ref.nota,\n    imagem = _ref.imagem,\n    type = _ref.type;\n  var imagePath = type === \"movie\" ? \"../assets/films/filme1.jpg\" : \"./assets/series/filme1.jpg\";\n  return _jsxs(TouchableOpacity, {\n    style: styles.containerFilmes,\n    children: [_jsx(Image, {\n      source: require(imagePath),\n      style: styles.imagemFilmes\n    }), _jsx(Text, {\n      style: styles.tituloFilmes,\n      children: nome\n    }), _jsxs(Text, {\n      style: styles.notaFilme,\n      children: [\" \", nota]\n    })]\n  });\n}",
+  "map": {
+    "version": 3,
+    "names": [
+      "styles",
+      "jsx",
+      "_jsx",
+      "jsxs",
+      "_jsxs",
+      "CardItem",
+      "_ref",
+      "nome",
+      "nota",
+      "imagem",
+      "type",
+      "imagePath",
+      "TouchableOpacity",
+      "style",
+      "containerFilmes",
+      "children",
+      "Image",
+      "source",
+      "require",
+      "imagemFilmes",
+      "Text",
+      "tituloFilmes",
+      "notaFilme"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/cardItem/index.tsx"
+    ],
+    "sourcesContent": [
+      "import React1 from \"react\";\nimport { Image, Text, TouchableOpacity } from \"react-native\";\nimport styles from \"./style\";\n\ninterface CardItemProps {\n  nome: string;\n  nota: number;\n  imagem: string;\n  type: \"serie\" | \"movie\";\n}\n\nexport default function CardItem({ nome, nota, imagem, type }: CardItemProps) {\n  const imagePath =\n    type === \"movie\"\n      ? `../assets/films/filme1.jpg`\n      : `./assets/series/filme1.jpg`;\n\n  return (\n    <TouchableOpacity style={styles.containerFilmes}>\n      <Image\n        source={require(imagePath)}\n        style={styles.imagemFilmes}\n      />\n      <Text style={styles.tituloFilmes}>{nome}</Text>\n      <Text style={styles.notaFilme}> {nota}</Text>\n    </TouchableOpacity>\n  );\n}\n"
+    ],
+    "mappings": ";;;AAEA,OAAOA,MAAM;AAAgB,SAAAC,GAAA,IAAAC,IAAA;AAAA,SAAAC,IAAA,IAAAC,KAAA;AAS7B,eAAe,SAASC,QAAQA,CAAAC,IAAA,EAA8C;EAAA,IAA3CC,IAAI,GAAAD,IAAA,CAAJC,IAAI;IAAEC,IAAI,GAAAF,IAAA,CAAJE,IAAI;IAAEC,MAAM,GAAAH,IAAA,CAANG,MAAM;IAAEC,IAAI,GAAAJ,IAAA,CAAJI,IAAI;EACzD,IAAMC,SAAS,GACbD,IAAI,KAAK,OAAO,8DAEgB;EAElC,OACEN,KAAA,CAACQ,gBAAgB;IAACC,KAAK,EAAEb,MAAM,CAACc,eAAgB;IAAAC,QAAA,GAC9Cb,IAAA,CAACc,KAAK;MACJC,MAAM,EAAEC,OAAO,CAACP,SAAS,CAAE;MAC3BE,KAAK,EAAEb,MAAM,CAACmB;IAAa,CAC5B,CAAC,EACFjB,IAAA,CAACkB,IAAI;MAACP,KAAK,EAAEb,MAAM,CAACqB,YAAa;MAAAN,QAAA,EAAER;IAAI,CAAO,CAAC,EAC/CH,KAAA,CAACgB,IAAI;MAACP,KAAK,EAAEb,MAAM,CAACsB,SAAU;MAAAP,QAAA,GAAC,GAAC,EAACP,IAAI;IAAA,CAAO,CAAC;EAAA,CAC7B,CAAC;AAEvB"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

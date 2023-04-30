@@ -1,0 +1,35 @@
+{
+  "ast": null,
+  "code": "import StyleSheet from \"react-native-web/dist/exports/StyleSheet\";\nvar styles = StyleSheet.create({\n  containerFilmes: {\n    paddingTop: 10,\n    paddingBottom: 16,\n    paddingRight: 16,\n    width: 140\n  },\n  tituloFilmes: {\n    color: 'white',\n    fontSize: 12,\n    paddingTop: 8\n  },\n  notaFilme: {\n    fontSize: 10,\n    color: 'white',\n    paddingLeft: 4\n  },\n  imagemFilmes: {\n    width: '100%',\n    height: 170,\n    borderRadius: 8\n  }\n});\nexport default styles;",
+  "map": {
+    "version": 3,
+    "names": [
+      "styles",
+      "StyleSheet",
+      "create",
+      "containerFilmes",
+      "paddingTop",
+      "paddingBottom",
+      "paddingRight",
+      "width",
+      "tituloFilmes",
+      "color",
+      "fontSize",
+      "notaFilme",
+      "paddingLeft",
+      "imagemFilmes",
+      "height",
+      "borderRadius"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/cardItem/style.js"
+    ],
+    "sourcesContent": [
+      "import { StyleSheet } from \"react-native\";\n\n    const styles = StyleSheet.create({\n\n        containerFilmes: {\n            paddingTop: 10,\n            paddingBottom: 16,\n            paddingRight: 16,\n            width: 140\n        },\n\n        tituloFilmes: {\n            color: 'white',\n            fontSize:12,\n            paddingTop: 8,\n        },\n\n        notaFilme: {\n            fontSize: 10,\n            color: 'white',\n            paddingLeft: 4\n        },\n        imagemFilmes:{\n            width: '100%',\n            height: 170,\n            borderRadius: 8,\n        }\n\n    })\n\n    export default styles;"
+    ],
+    "mappings": ";AAEI,IAAMA,MAAM,GAAGC,UAAU,CAACC,MAAM,CAAC;EAE7BC,eAAe,EAAE;IACbC,UAAU,EAAE,EAAE;IACdC,aAAa,EAAE,EAAE;IACjBC,YAAY,EAAE,EAAE;IAChBC,KAAK,EAAE;EACX,CAAC;EAEDC,YAAY,EAAE;IACVC,KAAK,EAAE,OAAO;IACdC,QAAQ,EAAC,EAAE;IACXN,UAAU,EAAE;EAChB,CAAC;EAEDO,SAAS,EAAE;IACPD,QAAQ,EAAE,EAAE;IACZD,KAAK,EAAE,OAAO;IACdG,WAAW,EAAE;EACjB,CAAC;EACDC,YAAY,EAAC;IACTN,KAAK,EAAE,MAAM;IACbO,MAAM,EAAE,GAAG;IACXC,YAAY,EAAE;EAClB;AAEJ,CAAC,CAAC;AAEF,eAAef,MAAM"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

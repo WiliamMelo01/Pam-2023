@@ -1,0 +1,44 @@
+{
+  "ast": null,
+  "code": "import FlatList from \"react-native-web/dist/exports/FlatList\";\nimport React from \"react\";\nimport CardItem from \"../cardItem\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nexport default function HorizontalList(_ref) {\n  var data = _ref.data;\n  return _jsx(FlatList, {\n    style: {\n      width: \"100%\",\n      margin: 15,\n      paddingRight: 10,\n      paddingLeft: 20\n    },\n    horizontal: true,\n    showsHorizontalScrollIndicator: false,\n    keyExtractor: function keyExtractor(item) {\n      return item.id;\n    },\n    data: data,\n    renderItem: function renderItem(_ref2) {\n      var item = _ref2.item;\n      return _jsx(CardItem, {\n        nome: item.nome,\n        nota: item.nota,\n        imagem: item.imagem,\n        type: item.tipo\n      });\n    }\n  });\n}",
+  "map": {
+    "version": 3,
+    "names": [
+      "React",
+      "CardItem",
+      "jsx",
+      "_jsx",
+      "HorizontalList",
+      "_ref",
+      "data",
+      "FlatList",
+      "style",
+      "width",
+      "margin",
+      "paddingRight",
+      "paddingLeft",
+      "horizontal",
+      "showsHorizontalScrollIndicator",
+      "keyExtractor",
+      "item",
+      "id",
+      "renderItem",
+      "_ref2",
+      "nome",
+      "nota",
+      "imagem",
+      "type",
+      "tipo"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/HorizontalList/index.tsx"
+    ],
+    "sourcesContent": [
+      "import { FlatList } from \"react-native\";\r\nimport React from \"react\";\r\nimport { Media } from \"../../models/Media\";\r\nimport CardItem from \"../cardItem\";\r\n\r\ninterface HorizontalListProps {\r\n  data: Media[];\r\n}\r\n\r\nexport default function HorizontalList({ data }: HorizontalListProps) {\r\n  return (\r\n    <FlatList\r\n      style={{ width: \"100%\", margin: 15, paddingRight: 10, paddingLeft: 20 }}\r\n      horizontal\r\n      showsHorizontalScrollIndicator={false}\r\n      keyExtractor={(item) => item.id}\r\n      data={data}\r\n      renderItem={({ item }) => (\r\n        <CardItem\r\n          nome={item.nome}\r\n          nota={item.nota}\r\n          imagem={item.imagem}\r\n          type={item.tipo}\r\n        />\r\n      )}\r\n    />\r\n  );\r\n}\r\n"
+    ],
+    "mappings": ";AACA,OAAOA,KAAK,MAAM,OAAO;AAEzB,OAAOC,QAAQ;AAAoB,SAAAC,GAAA,IAAAC,IAAA;AAMnC,eAAe,SAASC,cAAcA,CAAAC,IAAA,EAAgC;EAAA,IAA7BC,IAAI,GAAAD,IAAA,CAAJC,IAAI;EAC3C,OACEH,IAAA,CAACI,QAAQ;IACPC,KAAK,EAAE;MAAEC,KAAK,EAAE,MAAM;MAAEC,MAAM,EAAE,EAAE;MAAEC,YAAY,EAAE,EAAE;MAAEC,WAAW,EAAE;IAAG,CAAE;IACxEC,UAAU;IACVC,8BAA8B,EAAE,KAAM;IACtCC,YAAY,EAAE,SAAAA,aAACC,IAAI;MAAA,OAAKA,IAAI,CAACC,EAAE;IAAA,CAAC;IAChCX,IAAI,EAAEA,IAAK;IACXY,UAAU,EAAE,SAAAA,WAAAC,KAAA;MAAA,IAAGH,IAAI,GAAAG,KAAA,CAAJH,IAAI;MAAA,OACjBb,IAAA,CAACF,QAAQ;QACPmB,IAAI,EAAEJ,IAAI,CAACI,IAAK;QAChBC,IAAI,EAAEL,IAAI,CAACK,IAAK;QAChBC,MAAM,EAAEN,IAAI,CAACM,MAAO;QACpBC,IAAI,EAAEP,IAAI,CAACQ;MAAK,CACjB,CAAC;IAAA;EACF,CACH,CAAC;AAEN"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

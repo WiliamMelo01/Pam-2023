@@ -1,0 +1,18 @@
+{
+  "ast": null,
+  "code": "export * from \"./Font\";\nexport { useFonts } from \"./FontHooks\";",
+  "map": {
+    "version": 3,
+    "names": ["useFonts"],
+    "sources": [
+      "D:\\0ESTUDOS\\REACT_NATIVE\\Pam-2023\\Filmes\\node_modules\\expo-font\\src\\index.ts"
+    ],
+    "sourcesContent": [
+      "export * from './Font';\nexport { useFonts } from './FontHooks';\n"
+    ],
+    "mappings": "AAAA;AACA,SAASA,QAAQ"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

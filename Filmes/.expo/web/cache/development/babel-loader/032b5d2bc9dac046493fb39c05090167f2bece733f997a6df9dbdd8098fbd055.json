@@ -1,0 +1,40 @@
+{
+  "ast": null,
+  "code": "import StyleSheet from \"react-native-web/dist/exports/StyleSheet\";\nimport View from \"react-native-web/dist/exports/View\";\nimport { movies } from \"./src/data/movies.ts\";\nimport { series } from \"./src/data/series.ts\";\nimport Header from \"./src/components/Header/index.tsx\";\nimport SerchBar from \"./src/components/SerchBar/index.tsx\";\nimport Title from \"./src/components/Title/index.tsx\";\nimport BannerFilms from \"./src/components/BannerFilms/index.tsx\";\nimport HorizontalList from \"./src/components/HorizontalList/index.tsx\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\nexport default function App() {\n  return _jsxs(View, {\n    style: styles.container,\n    children: [_jsx(Header, {}), _jsx(SerchBar, {}), _jsx(BannerFilms, {}), _jsx(Title, {\n      children: \"Filmes\"\n    }), _jsx(HorizontalList, {\n      data: movies\n    }), _jsx(Title, {\n      children: \"Series\"\n    }), _jsx(HorizontalList, {\n      data: series\n    })]\n  });\n}\nvar styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: \"#141A29\",\n    alignItems: \"center\"\n  }\n});",
+  "map": {
+    "version": 3,
+    "names": [
+      "movies",
+      "series",
+      "Header",
+      "SerchBar",
+      "Title",
+      "BannerFilms",
+      "HorizontalList",
+      "jsx",
+      "_jsx",
+      "jsxs",
+      "_jsxs",
+      "App",
+      "View",
+      "style",
+      "styles",
+      "container",
+      "children",
+      "data",
+      "StyleSheet",
+      "create",
+      "flex",
+      "backgroundColor",
+      "alignItems"
+    ],
+    "sources": ["D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/App.tsx"],
+    "sourcesContent": [
+      "import { StyleSheet, Text, View, FlatList } from \"react-native\";\nimport { movies } from \"./src/data/movies.ts\";\nimport { series } from \"./src/data/series.ts\";\n\n// COMPONENTS\nimport Header from \"./src/components/Header/index.tsx\";\nimport SerchBar from \"./src/components/SerchBar/index.tsx\";\nimport Title from \"./src/components/Title/index.tsx\";\nimport BannerFilms from \"./src/components/BannerFilms/index.tsx\";\nimport HorizontalList from \"./src/components/HorizontalList/index.tsx\";\n\nexport default function App() {\n  return (\n    <View style={styles.container}>\n      <Header />\n      <SerchBar />\n      <BannerFilms />\n      <Title>Filmes</Title>\n      <HorizontalList data={movies}/>\n      <Title>Series</Title>\n      <HorizontalList data={series}/>\n    </View>\n  );\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: \"#141A29\",\n    alignItems: \"center\",\n  },\n});\n"
+    ],
+    "mappings": ";;AACA,SAASA,MAAM;AACf,SAASC,MAAM;AAGf,OAAOC,MAAM;AACb,OAAOC,QAAQ;AACf,OAAOC,KAAK;AACZ,OAAOC,WAAW;AAClB,OAAOC,cAAc;AAAkD,SAAAC,GAAA,IAAAC,IAAA;AAAA,SAAAC,IAAA,IAAAC,KAAA;AAEvE,eAAe,SAASC,GAAGA,CAAA,EAAG;EAC5B,OACED,KAAA,CAACE,IAAI;IAACC,KAAK,EAAEC,MAAM,CAACC,SAAU;IAAAC,QAAA,GAC5BR,IAAA,CAACN,MAAM,IAAE,CAAC,EACVM,IAAA,CAACL,QAAQ,IAAE,CAAC,EACZK,IAAA,CAACH,WAAW,IAAE,CAAC,EACfG,IAAA,CAACJ,KAAK;MAAAY,QAAA,EAAC;IAAM,CAAO,CAAC,EACrBR,IAAA,CAACF,cAAc;MAACW,IAAI,EAAEjB;IAAO,CAAC,CAAC,EAC/BQ,IAAA,CAACJ,KAAK;MAAAY,QAAA,EAAC;IAAM,CAAO,CAAC,EACrBR,IAAA,CAACF,cAAc;MAACW,IAAI,EAAEhB;IAAO,CAAC,CAAC;EAAA,CAC3B,CAAC;AAEX;AAEA,IAAMa,MAAM,GAAGI,UAAU,CAACC,MAAM,CAAC;EAC/BJ,SAAS,EAAE;IACTK,IAAI,EAAE,CAAC;IACPC,eAAe,EAAE,SAAS;IAC1BC,UAAU,EAAE;EACd;AACF,CAAC,CAAC"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

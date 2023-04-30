@@ -1,0 +1,27 @@
+{
+  "ast": null,
+  "code": "import StyleSheet from \"react-native-web/dist/exports/StyleSheet\";\nexport var styles = StyleSheet.create({\n  listContainer: {\n    width: \"100%\",\n    margin: 15,\n    paddingRight: 10,\n    paddingLeft: 20\n  }\n});",
+  "map": {
+    "version": 3,
+    "names": [
+      "styles",
+      "StyleSheet",
+      "create",
+      "listContainer",
+      "width",
+      "margin",
+      "paddingRight",
+      "paddingLeft"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/HorizontalList/style.ts"
+    ],
+    "sourcesContent": [
+      "import { StyleSheet } from \"react-native\";\r\n\r\nexport const styles = StyleSheet.create({\r\n  listContainer: {\r\n    width: \"100%\",\r\n    margin: 15,\r\n    paddingRight: 10,\r\n    paddingLeft: 20,\r\n  },\r\n});\r\n"
+    ],
+    "mappings": ";AAEA,OAAO,IAAMA,MAAM,GAAGC,UAAU,CAACC,MAAM,CAAC;EACtCC,aAAa,EAAE;IACbC,KAAK,EAAE,MAAM;IACbC,MAAM,EAAE,EAAE;IACVC,YAAY,EAAE,EAAE;IAChBC,WAAW,EAAE;EACf;AACF,CAAC,CAAC"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

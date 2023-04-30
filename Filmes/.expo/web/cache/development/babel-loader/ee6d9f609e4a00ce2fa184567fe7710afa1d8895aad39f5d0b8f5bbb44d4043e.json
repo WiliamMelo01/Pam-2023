@@ -1,0 +1,18 @@
+{
+  "ast": null,
+  "code": "import Text from \"react-native-web/dist/exports/Text\";\nimport React from \"react\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nexport default function Title(_ref) {\n  var children = _ref.children;\n  return _jsx(Text, {\n    children: children\n  });\n}",
+  "map": {
+    "version": 3,
+    "names": ["React", "jsx", "_jsx", "Title", "_ref", "children", "Text"],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/Title/index.tsx"
+    ],
+    "sourcesContent": [
+      "import { Text } from \"react-native\";\nimport React from \"react\";\nimport { styles } from \"./style\";\n\nexport default function Title({ children }) {\n  return <Text>{children}</Text>;\n}\n"
+    ],
+    "mappings": ";AACA,OAAOA,KAAK,MAAM,OAAO;AAAC,SAAAC,GAAA,IAAAC,IAAA;AAG1B,eAAe,SAASC,KAAKA,CAAAC,IAAA,EAAe;EAAA,IAAZC,QAAQ,GAAAD,IAAA,CAARC,QAAQ;EACtC,OAAOH,IAAA,CAACI,IAAI;IAAAD,QAAA,EAAEA;EAAQ,CAAO,CAAC;AAChC"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

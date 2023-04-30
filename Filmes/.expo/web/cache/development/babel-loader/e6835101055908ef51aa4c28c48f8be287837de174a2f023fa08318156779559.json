@@ -1,0 +1,16 @@
+{
+  "ast": null,
+  "code": "export default {};",
+  "map": {
+    "version": 3,
+    "names": [],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/node_modules/react-native-web/dist/exports/Systrace/index.js"
+    ],
+    "sourcesContent": ["export default {};"],
+    "mappings": "AAAA,eAAe,CAAC,CAAC"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}

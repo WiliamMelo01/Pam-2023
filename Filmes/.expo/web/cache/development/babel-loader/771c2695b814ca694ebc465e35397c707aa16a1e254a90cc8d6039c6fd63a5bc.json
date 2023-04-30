@@ -1,0 +1,29 @@
+{
+  "ast": null,
+  "code": "import StyleSheet from \"react-native-web/dist/exports/StyleSheet\";\nexport var styles = StyleSheet.create({\n  title: {\n    fontSize: 25,\n    color: \"white\",\n    marginTop: 15,\n    alignSelf: \"flex-start\",\n    marginLeft: 20,\n    fontWeight: \"semibold\"\n  }\n});",
+  "map": {
+    "version": 3,
+    "names": [
+      "styles",
+      "StyleSheet",
+      "create",
+      "title",
+      "fontSize",
+      "color",
+      "marginTop",
+      "alignSelf",
+      "marginLeft",
+      "fontWeight"
+    ],
+    "sources": [
+      "D:/0ESTUDOS/REACT_NATIVE/Pam-2023/Filmes/src/components/Title/style.ts"
+    ],
+    "sourcesContent": [
+      "import { StyleSheet } from \"react-native\";\n\nexport const styles = StyleSheet.create({\n  title: {\n    fontSize: 25,\n    color: \"white\",\n    marginTop: 15,\n    alignSelf: \"flex-start\",\n    marginLeft: 20,\n    fontWeight: \"semibold\",\n  },\n});\n"
+    ],
+    "mappings": ";AAEA,OAAO,IAAMA,MAAM,GAAGC,UAAU,CAACC,MAAM,CAAC;EACtCC,KAAK,EAAE;IACLC,QAAQ,EAAE,EAAE;IACZC,KAAK,EAAE,OAAO;IACdC,SAAS,EAAE,EAAE;IACbC,SAAS,EAAE,YAAY;IACvBC,UAAU,EAAE,EAAE;IACdC,UAAU,EAAE;EACd;AACF,CAAC,CAAC"
+  },
+  "metadata": {},
+  "sourceType": "module",
+  "externalDependencies": []
+}
