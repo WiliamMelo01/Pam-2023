@@ -1,0 +1,1 @@
+export const CATEGORIES = ["Pizza", 'Sanduíches','Massas','Comida japonesa',]
