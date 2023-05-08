@@ -6,14 +6,51 @@ import { CATEGORIES } from "../data/categories";
 import ProductItem from "../components/ProductItem";
 import { FOODS } from "../data/Foods";
 
-export default function Home() {
+import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+
+import { RootStackParamList } from "../../App";
+
+type ProfileScreenNavigationProp =
+  NativeStackNavigationProp<RootStackParamList>;
+
+interface IHomeProps {
+  navigation: ProfileScreenNavigationProp;
+}
+
+export default function Home({ navigation }: IHomeProps) {
   const [selectedCategorie, setSelectedCategorie] = useState<string>("Pizza");
 
   const FoodListRef = useRef(null);
 
+  function redirectUserToDetailsPage(
+    name: string,
+    description: string,
+    rating: number,
+    ratingCount: number,
+    imagePath: string,
+    calories: number,
+    amount: string,
+    distance: number,
+    delivery: "Express" | "Standard",
+    price: number
+  ) {
+    navigation.navigate("Details", {
+      amount,
+      calories,
+      description,
+      distance,
+      imagePath,
+      name,
+      rating,
+      ratingCount,
+      delivery,
+      price,
+    });
+  }
+
   return (
-    <View>
-      <StatusBar barStyle="dark-content" backgroundColor="white" />
+    <View backgroundColor="gray.100">
+      <StatusBar barStyle="dark-content" backgroundColor="#f4f4f5" />
 
       <Header />
 
@@ -50,10 +87,24 @@ export default function Home() {
               rating={item.rating}
               restaurantName={item.restaurantName}
               ratingCount={item.ratingCount}
+              onClick={() =>
+                redirectUserToDetailsPage(
+                  item.name,
+                  item.description,
+                  item.rating,
+                  item.ratingCount,
+                  item.imageName,
+                  item.calories,
+                  item.amount,
+                  item.distance,
+                  item.delivery,
+                  item.price
+                )
+              }
               key={index}
             />
           )}
-          keyExtractor={item => item.id.toString()}
+          keyExtractor={(item) => item.id.toString()}
           horizontal
           showsHorizontalScrollIndicator={false}
           ref={FoodListRef}

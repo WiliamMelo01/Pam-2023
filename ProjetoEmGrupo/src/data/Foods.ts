@@ -2,17 +2,17 @@ import {
     Food
 } from "../model/Food";
 
-const pizzas: Food[] = [new Food(1, 'Quatro queijos', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683504275/quatroQueijos_wjorlf.webp', 28.99, 1, 9.1, 'Pizza', 'Pizzaria do seu sé', 870),
-    new Food(2, 'Margherita', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683504275/margherita_whzwas.webp', 31.49, 2, 8.8, 'Pizza', 'Pizzaria do seu sé', 470), new Food(3, 'Mussarela', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507246/pizzaMussarela_oj546p.webp', 35, 2.5, 8.5, 'Pizza', 'Pizzaria do João', 10),
-    new Food(4, 'Calabresa', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507322/pizzaCalabresa_l8affs.jpg', 40, 4.0, 9.0, 'Pizza', 'Pizzaria da Maria', 12),
-    new Food(5, 'Frango com Catupiry', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507379/pizzaFrangoCatupiry_aqifot.jpg', 45, 3.2, 8.7, 'Pizza', 'Pizzaria do Zé', 8),
-    new Food(6, 'Atum com Mussarela', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507379/pizzaFrangoCatupiry_aqifot.jpg', 38, 5.0, 7.8, 'Pizza', 'Pizzaria do Pedro', 5),
-    new Food(7, 'Quatro Queijos', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507629/pizzaQatroQueijos_lx0ril.webp', 42, 1.5, 9.5, 'Pizza', 'Pizzaria da Ana', 20),
-    new Food(8, 'Bacon', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507802/pizzaBacon_vgrjr6.jpg', 50, 6.5, 7.0, 'Pizza', 'Pizzaria do Luis', 15),
-    new Food(9, 'Tomate Seco', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507853/pizzaTomateSeco_xmamzq.webp', 36, 2.0, 8.0, 'Pizza', 'Pizzaria da Carla', 6),
-    new Food(10, 'Pizza Portuguesa', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507899/pizzaPortuguesa_xj24bl.jpg', 44, 3.7, 9.2, 'Pizza', 'Pizzaria do Marcelo', 18),
-    new Food(11, 'Palmito', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507965/pizzaPalmite_ui41ld.jpg', 39, 2.8, 7.5, 'Pizza', 'Pizzaria do Rafael', 7),
-    new Food(12, 'Chocolate', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683508006/pizzaChocolate_tvv1vi.jpg', 30, 1.0, 9.8, 'Pizza Doce', 'Pizzaria da Luana', 25),
+const pizzas: Food[] = [new Food(1, 'Quatro queijos', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683504275/quatroQueijos_wjorlf.webp', 28.99, 1, 9.1, 'Pizza', 'Pizzaria do seu sé', 870,'Pizza com quatro tipos de queijo: mussarela, provolone, parmesão e gorgonzola',870,'1 unidade','Standard'),
+    new Food(2, 'Margherita', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683504275/margherita_whzwas.webp', 31.49, 2, 8.8, 'Pizza', 'Pizzaria do seu sé', 470,'Pizza com molho de tomate, mussarela e manjericão',470,'1 unidade', 'Standard'), new Food(3, 'Mussarela', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507246/pizzaMussarela_oj546p.webp', 35, 2.5, 8.5, 'Pizza', 'Pizzaria do João', 10,'Pizza de mussarela com molho de tomate',850,'1 unidade','Express'),
+    new Food(4, 'Calabresa', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507322/pizzaCalabresa_l8affs.jpg', 40, 4.0, 9.0, 'Pizza', 'Pizzaria da Maria', 12,'Pizza de calabresa com cebola, mussarela e molho de tomate',900,'1 unidade','Express'),
+    new Food(5, 'Frango com Catupiry', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507379/pizzaFrangoCatupiry_aqifot.jpg', 45, 3.2, 8.7, 'Pizza', 'Pizzaria do Zé', 8,'Pizza de frango desfiado com catupiry, mussarela e molho de tomate.',820,'1 unidade','Standard'),
+    new Food(6, 'Atum com Mussarela', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507379/pizzaFrangoCatupiry_aqifot.jpg', 38, 5.0, 7.8, 'Pizza', 'Pizzaria do Pedro', 5,'Pizza de atum com mussarela, cebola e molho de tomate.',700,'1 unidade','Express'),
+    new Food(7, 'Quatro Queijos', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507629/pizzaQatroQueijos_lx0ril.webp', 42, 1.5, 9.5, 'Pizza', 'Pizzaria da Ana', 20,'Pizza com quatro tipos de queijo: mussarela, provolone, parmesão e gorgonzola.',950,'1 unidade','Standard'),
+    new Food(8, 'Bacon', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507802/pizzaBacon_vgrjr6.jpg', 50, 6.5, 7.0, 'Pizza', 'Pizzaria do Luis', 15,'Pizza de bacon com mussarela, cebola e molho de tomate.',1250,'1 unidade','Express'),
+    new Food(9, 'Tomate Seco', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507853/pizzaTomateSeco_xmamzq.webp', 36, 2.0, 8.0, 'Pizza', 'Pizzaria da Carla', 6,'Pizza com tomate seco, mussarela e manjericão.',780,'1 unidade','Express'),
+    new Food(10, 'Pizza Portuguesa', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507899/pizzaPortuguesa_xj24bl.jpg', 44, 3.7, 9.2, 'Pizza', 'Pizzaria do Marcelo', 18,'Pizza portuguesa com presunto, mussarela, ovo, cebola, azeitona, pimentão e molho de tomate.',920,'1 unidade','Standard'),
+    new Food(11, 'Palmito', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683507965/pizzaPalmite_ui41ld.jpg', 39, 2.8, 7.5, 'Pizza', 'Pizzaria do Rafael', 7,'Pizza de palmito com mussarela, azeitona e molho de tomate.',830,'1 unidade','Express'),
+    new Food(12, 'Chocolate', 'https://res.cloudinary.com/dblxw7p0c/image/upload/v1683508006/pizzaChocolate_tvv1vi.jpg', 30, 1.0, 9.8, 'Pizza Doce', 'Pizzaria da Luana', 25,'Pizza doce com chocolate e granulado.',500,'1 unidade','Express'),
 ]
 
 const sandwichs: Food[] = [

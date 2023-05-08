@@ -1,6 +1,8 @@
 import { Image, Text, Icon, Box, Pressable } from "native-base";
 import React, { memo } from "react";
 import { Entypo } from "@expo/vector-icons";
+import Rating from "./Rating";
+
 
 interface IProductItemProps {
   name: string;
@@ -10,6 +12,7 @@ interface IProductItemProps {
   rating: number;
   restaurantName: string;
   ratingCount: number;
+  onClick: () => void;
 }
 
 function ProductItem({
@@ -20,9 +23,13 @@ function ProductItem({
   rating,
   restaurantName,
   ratingCount,
+  onClick,
 }: IProductItemProps) {
   return (
-    <Box
+    <Pressable
+      onPress={onClick}
+      opacity={1}
+      _pressed={{ opacity: 0.5 }}
       shadow="2"
       w={300}
       h="auto"
@@ -60,13 +67,7 @@ function ProductItem({
 
         <Text color="#989898">{restaurantName}</Text>
 
-        <Box flexDir="row" alignItems="center" mb={4}>
-          <Icon as={Entypo} name="star" size={18} color="#FF0" mr={1} />
-          <Text fontSize="md" color="#2F4B4E" fontWeight="semibold" mx={1}>
-            {rating}
-          </Text>
-          <Text color="#989898">({ratingCount} Avaliações)</Text>
-        </Box>
+        <Rating rating={rating} ratingCount={ratingCount} />
 
         <Pressable
           bgColor="#C67C4E"
@@ -88,7 +89,7 @@ function ProductItem({
           </Text>
         </Pressable>
       </Box>
-    </Box>
+    </Pressable>
   );
 }
 
