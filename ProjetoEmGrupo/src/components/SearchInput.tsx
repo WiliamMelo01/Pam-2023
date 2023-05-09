@@ -23,7 +23,7 @@ export default function SearchInput() {
       placeholderTextColor="#989898"
       fontSize="md"
       placeholder="Procure uma comida"
-      borderWidth={0}
+      borderWidth={1}
       rounded="xl"
       h={16}
       w="full"
